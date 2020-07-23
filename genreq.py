@@ -21,8 +21,7 @@ def main():
 
 def genreq():
 
-    CycleSleep = 1
-    RequestsPerCycle = 100
+    RequestsPerCycle = 10
 
     for i in range(RequestsPerCycle):
         c = pycurl.Curl()
@@ -48,7 +47,6 @@ def genreq():
                             'status_code':status_code})
         print(data)
         c.close()
-    time.sleep(CycleSleep)
 
 if __name__ == "__main__":
     print("Starting load test")

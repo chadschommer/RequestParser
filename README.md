@@ -8,7 +8,7 @@ This project runs in conjunction with SpringBootSample which has a simple timest
 
 ### Run Locally
 ```bash
-$ python3 parser.py localhost:8080/timestamp
+$ python3 genreq.py localhost:8080/timestamp
 ```
 
 ### Purpose
